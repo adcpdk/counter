@@ -11,16 +11,14 @@ for line in fread:
 fread.close()
 to_write = "\n" + str(localtime) + "\n" + readings[0] + ""
 if os.path.exists("report-ADK.txt"):
-    '''f = file("report-ADK.txt", "r+")
-    f.write(tot)
-    f.close()'''
+    #trying to append to the report file if exists
     f = file("report-ADK.txt", "a")
     f.write(to_write)
     f.close()
 else:
+    #creatinga report file with the content
     f = file("report-ADK.txt", "w")
     f.write(to_write)
     f.close()
-#f = file("./adk.txt", "w"),f.close()
-#open('adk.txt', 'w').close()
-os.remove("adk.txt")
+
+os.remove("adk.txt") #removing adk.txt to start a new day
