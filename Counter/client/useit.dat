@@ -1,0 +1,5 @@
+open server.name
+login
+pass
+put D:\TFS\report-ADK.txt
+quit
