@@ -1,0 +1,1 @@
+del d:\TFS\adk.txt
