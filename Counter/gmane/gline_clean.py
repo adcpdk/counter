@@ -15,7 +15,7 @@ conn = sqlite3.connect('db1.db')
 conn.text_factory = str
 cur = conn.cursor()
 
-# Determine the top ten organizations
+
 orgs = ['adk', 'mega', 'sputnik']
 print orgs
 #for adk
