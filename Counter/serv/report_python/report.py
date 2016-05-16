@@ -1,6 +1,6 @@
 import sqlite3
 import re
-#CREATE TABLE Counts (dates TEXT, count INTEGER)
+
 conn = sqlite3.connect('/Users/itlabs/db1.db')
 cur = conn.cursor()
 

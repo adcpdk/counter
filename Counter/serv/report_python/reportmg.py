@@ -16,7 +16,6 @@ fh = open(fname)
 count = 0
 for line in fh:
     if not count % 2:
-        #print "First", line
         people = line
         count = count + 1
         continue
