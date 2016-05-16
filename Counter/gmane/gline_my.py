@@ -4,8 +4,8 @@ import urllib
 import zlib
 from dateutil.parser import parse
 #from sortedcontainers import SortedDict
-y=0
-z=0
+'''y=0
+z=0'''
 
 #orgs = sorted(sendorgs, key=sendorgs.get, reverse=True)
 #import re
@@ -146,19 +146,19 @@ for i,b in fin.items():
 
 
 for keyq,valueq in fin.items():
-    print "JUST",keyq,valueq
+    #print "JUST",keyq,valueq
     lessthen3 = 0
     for i in valueq.split(","):
         lessthen3 = lessthen3 + 1
-    print "Kolichestvo: ",lessthen3
+    #print "Quantity: ",lessthen3
     if lessthen3 == 1:
         fin[keyq] = str(fin[keyq]) +","+ str(0) +","+ str(0)
-    print "After: ",fin[keyq]
+    #print "After: ",fin[keyq]
     if lessthen3 == 2:
         fin[keyq] = str(fin[keyq]) +","+ str(0)
-    print "After: ",fin[keyq]
+    #print "After: ",fin[keyq]
 for i,b in fin.items():
-    print "ZZFinal dictionary: ",i,b
+    print "Final dictionary: ",i,b
 #d = {2:3, 1:89, 4:5, 3:0}
 #s = SortedDict(fin)
 #print s.items()
